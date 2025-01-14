@@ -363,3 +363,13 @@ cmake-build-debug/tests/CTestTestfile.cmake
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
+cmake-build-debug/.cmake/api/v1/reply/cache-v2-c163835b9307ead4e4b1.json
+cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-f178300aa10c209376a1.json
+cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-38a3ca9ba4d78cad76c2.json
+cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-70f9eefb4897928e9de8.json
+cmake-build-debug/.cmake/api/v1/reply/index-2025-01-14T21-59-26-0055.json
+cmake-build-debug/.cmake/api/v1/reply/target-DictionaryOverlay-Debug-0fc8ce4a829ae7246fa3.json
+cmake-build-debug/.qt/QtDeployTargets.cmake
+cmake-build-debug/*
+.idea/*
+.vscode/*

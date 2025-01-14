@@ -8,7 +8,7 @@
 #include <optional>
 #include <vector>
 
-namespace utils {
+namespace Utils {
     class Logger {
         public:
             enum class Level {
@@ -112,11 +112,11 @@ namespace utils {
     };
 } //namespace utils
 
-#define LOG_DEBUG(message) utils::Logger::log(utils::Logger::Level::Debug, message)
-#define LOG_INFO(message) utils::Logger::log(utils::Logger::Level::Info, message)
-#define LOG_WARNING(message) utils::Logger::log(utils::Logger::Level::Warning, message)
-#define LOG_ERROR(message) utils::Logger::log(utils::Logger::Level::Error, message)
-#define LOG_CRITICAL(message) utils::Logger::log(utils::Logger::Level::Critical, message)
+#define LOG_DEBUG(message) Utils::Logger::log(Utils::Logger::Level::Debug, message)
+#define LOG_INFO(message) Utils::Logger::log(Utils::Logger::Level::Info, message)
+#define LOG_WARNING(message) Utils::Logger::log(Utils::Logger::Level::Warning, message)
+#define LOG_ERROR(message) Utils::Logger::log(Utils::Logger::Level::Error, message)
+#define LOG_CRITICAL(message) Utils::Logger::log(Utils::Logger::Level::Critical, message)
 
-#define MEASURE_SCOPE(name) utils::ScopedTimer timer(name)
+#define MEASURE_SCOPE(name) Utils::ScopedTimer timer(name)
 

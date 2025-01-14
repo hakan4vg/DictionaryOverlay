@@ -46,7 +46,7 @@ target_link_libraries(DictionaryOverlay
         Qt6::Widgets
         Qt6::Concurrent
         ${OpenCV_LIBS}
-        ${PaddleOCR_LIBS}
+        ${Tesseract_LIBS}
         SQLite::SQLite3
 )
 
@@ -54,5 +54,5 @@ target_include_directories(DictionaryOverlay
     PRIVATE
         ${CMAKE_SOURCE_DIR}/include
         ${OpenCV_INCLUDE_DIRS}
-        ${PaddleOCR_INCLUDE_DIRS}
+        ${Tesseract_INCLUDE_DIRS}
 )

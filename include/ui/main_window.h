@@ -1,8 +1,21 @@
-//
-// Created by xmrhk on 14.01.2025.
-//
+#pragma once
 
-#ifndef MAIN_WINDOW_H
-#define MAIN_WINDOW_H
+#include <QMainWindow>
+#include "screenshot/screenshot_manager.h"
+#include "ui/overlay_window.h"
 
-#endif //MAIN_WINDOW_H
+class MainWindow : public QMainWindow {
+    Q_OBJECT
+
+public:
+    explicit MainWindow(QWidget* parent = nullptr);
+    ~MainWindow();
+
+    private slots:
+        void handleError(const QString& message);
+
+private:
+    void setupScreenshotSystem();
+    ScreenshotManager* m_screenshotManager;
+    OverlayWindow* m_overlayWindow;
+};

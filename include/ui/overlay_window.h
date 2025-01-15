@@ -1,8 +1,20 @@
-//
-// Created by xmrhk on 14.01.2025.
-//
+#pragma once
 
-#ifndef OVERLAY_WINDOW_H
-#define OVERLAY_WINDOW_H
+#include <QWidget>
+#include <QPixmap>
 
-#endif //OVERLAY_WINDOW_H
+class OverlayWindow : public QWidget
+{
+    Q_OBJECT
+public:
+    explicit OverlayWindow(QWidget* parent = nullptr);
+    void showScreenshot(const QPixmap& screenshot);
+
+protected:
+    void paintEvent(QPaintEvent* event) override;
+    void keyPressEvent(QKeyEvent* event) override;
+
+private:
+    QPixmap m_screenshot;
+    static constexpr int BORDER_WIDTH = 2;
+};
